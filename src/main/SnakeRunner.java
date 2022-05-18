@@ -18,6 +18,6 @@ public class SnakeRunner {
         window.setLocationRelativeTo(null);
         window.setVisible(true);
 
-        Screen.initiateThread();
+        screen.initiateThread();
     }
 }
