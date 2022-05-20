@@ -16,8 +16,8 @@ public class Player extends Entity {
         setDefaultValues();
     }
     public void setDefaultValues(){
-        x = 100;
-        y = 100;
+        x = sc.screenWidth/2;
+        y = sc.screenHeight/2;
         speed = 4;
     }
     public void update(){
