@@ -21,14 +21,15 @@ public class Player extends Entity {
     }
     public void setDefaultValues(){
         x = sc.screenWidth/2;
-        y = sc.screenHeight/2;
+        y = sc.screenHeight-(sc.screenHeight/8);
         speed = 4;
+        direction = "left";
     }
 
     public void getPlayerImage(){
         try {
-            platL = ImageIO.read(getClass().getResourceAsStream("/Platform/Dx_platL.png"));
-            platR = ImageIO.read(getClass().getResourceAsStream("/Platform/Dx_platR.png"));
+            platL = ImageIO.read(getClass().getResourceAsStream("/PlatL.png"));
+            platR = ImageIO.read(getClass().getResourceAsStream("/PlatR.png"));
         } catch(IOException e){
             e.printStackTrace();
         }
@@ -36,9 +37,9 @@ public class Player extends Entity {
 
     public void update(){
         if (keyH.upPressed) {
-            y -= speed;
+//            y -= speed;
         } else if (keyH.downPressed){
-            y += speed;
+//            y += speed;
         } else if (keyH.leftPressed){
             x -= speed;
             direction = "left";
