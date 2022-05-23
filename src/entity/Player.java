@@ -61,6 +61,6 @@ public class Player extends Entity {
                 image = platR;
                 break;
         }
-        g2.drawImage(image, x, y, sc.tileSize, sc.tileSize, null);
+        g2.drawImage(image, x, y, sc.tileSize*2, sc.tileSize, null);
     }
 }
